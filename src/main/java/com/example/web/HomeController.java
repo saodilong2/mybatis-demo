@@ -19,7 +19,7 @@ public class HomeController {
   @RequestMapping(value="")
   String index() {
     System.out.println("+++++++++++++++++++++++++++++++++");
-    System.out.println(this.cityMapper.selectCityById(1));
+    System.out.println(this.cityMapper.selectCityById(2));
     System.out.println("+++++++++++++++++++++++++++++++++");
     return "index";
   }

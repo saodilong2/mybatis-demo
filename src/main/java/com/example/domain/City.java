@@ -7,54 +7,51 @@ import java.io.Serializable;
  */
 public class City implements Serializable {
 
-  private Long id;
+	private static final long serialVersionUID = 1L;
 
-  private String name;
+	private Long id;
 
-  private String state;
+	private String name;
 
-  private String country;
+	private String state;
 
-  public Long getId() {
-    return this.id;
-  }
+	private String country;
 
-  public void setId(Long id) {
-    this.id = id;
-  }
+	public Long getId() {
+		return this.id;
+	}
 
-  public String getName() {
-    return this.name;
-  }
+	public void setId(Long id) {
+		this.id = id;
+	}
 
-  public void setName(String name) {
-    this.name = name;
-  }
+	public String getName() {
+		return this.name;
+	}
 
-  public String getState() {
-    return this.state;
-  }
+	public void setName(String name) {
+		this.name = name;
+	}
 
-  public void setState(String state) {
-    this.state = state;
-  }
+	public String getState() {
+		return this.state;
+	}
 
-  public String getCountry() {
-    return this.country;
-  }
+	public void setState(String state) {
+		this.state = state;
+	}
 
-  public void setCountry(String country) {
-    this.country = country;
-  }
+	public String getCountry() {
+		return this.country;
+	}
 
-  @Override
-  public String toString() {
-    return "City{" +
-        "id=" + this.id +
-        ", name='" + this.name + '\'' +
-        ", state='" + this.state + '\'' +
-        ", country='" + this.country + '\'' +
-        '}';
-  }
+	public void setCountry(String country) {
+		this.country = country;
+	}
+
+	@Override
+	public String toString() {
+		return "City{" + "id=" + this.id + ", name='" + this.name + '\'' + ", state='" + this.state + '\''
+				+ ", country='" + this.country + '\'' + '}';
+	}
 }
-
